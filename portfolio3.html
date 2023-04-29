@@ -1,0 +1,59 @@
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">SMS Sender with Textbelt API</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image-->
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/text_lambda.png" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/text_screenshot.png" alt="..." />
+                            <!-- Portfolio Modal - Text-->
+                            <!-- <p class="mb-4 text-start"><strong>Project Title:</strong> SMS Sender with Textbelt</p> -->
+                            <p class="mb-4 text-start"><strong>Project Description:</strong> This project utilizes a Python script that sends SMS messages using the Textbelt API. The script is designed to be deployed on AWS Lambda and can be scheduled to send messages periodically. Textbelt is a simple and effective SMS gateway service that enables users to send messages with ease.</p>
+                            <p class="mb-4 text-start">The script imports the 'requests' library to make HTTP POST requests to the Textbelt API, while 'schedule' and 'time' libraries allow for scheduling and time management. The user's mobile number and message content are stored in the 'credentials' module to maintain privacy and security.</p>
+                            <p class="mb-4 text-start"><strong>Key Technologies:</strong></p>
+                            <ul class="text-start">
+                                <li>Python</li>
+                                <li>AWS Lambda</li>
+                                <li>Textbelt API</li>
+                                <li>requests library</li>
+                                <li>schedule library</li>
+                            </ul>
+<pre><code class="language-python">
+import requests
+import schedule
+import time
+from credentials import mobile_number
+
+def lambda_handler(event, context):
+send_message()
+
+def send_message():
+resp = requests.post('https://textbelt.com/text', {
+    'phone': mobile_number,
+    'message': 'Test message from Lambda.',
+    'key': 'textbelt'
+})
+print(resp.json())
+</code></pre>   
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
