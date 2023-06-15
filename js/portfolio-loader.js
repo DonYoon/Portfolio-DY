@@ -16,4 +16,5 @@ function loadPortfolio(portfolioId, fileName) {
   loadPortfolio("portfolioModal5Container", "portfolios/portfolio5.html");
   loadPortfolio("portfolioModal6Container", "portfolios/portfolio6.html");
   loadPortfolio("portfolioModal7Container", "portfolios/portfolio7.html");
+  loadPortfolio("portfolioModal8Container", "portfolios/portfolio8.html");
   // Add more calls for other portfolios
