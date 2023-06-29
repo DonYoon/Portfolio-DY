@@ -7,7 +7,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Snake Game</h2>
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Recipe Finder</h2>
                             <!-- Icon Divider-->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
@@ -15,10 +15,26 @@
                                 <div class="divider-custom-line"></div>
                             </div>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/snake1.png" alt="..." />
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/snake2.png" alt="..." />
-                            <iframe class="rounded mb-5" src="https://donyoon.github.io/snake/" width="100%" height="500" frameborder="0"></iframe>
+                            <iframe class="rounded mb-5" src="https://recipefinder.donnamkung.repl.co/" width="100%" height="500" frameborder="0"></iframe>
                             <!-- Portfolio Modal - Text-->
+                            <p class="mb-4 text-start"><strong>Project Description:</strong> "Recipe Finder" is an interactive web application developed using React.js. This application allows users to search for meals, view details of individual meals, add meals to a favorite list, and remove meals from this list. All the user data is saved in the local storage, thus making it persist over sessions. The project is hosted on Replit, making it readily accessible without the need for deployment on other platforms. Clicking on the Replit link takes you straight to the live version of the application.</p>
+
+                            <p class="mb-4 text-start"><strong>Features:</strong></p>
+                            <ul class="text-start">
+                                <li><strong>Search Component:</strong> This feature allows the users to input their desired meal in a search bar. The user can either enter a specific search term or click the "Surprise me!" button for a random meal suggestion.</li>
+                                <li><strong>Meals Component:</strong> This feature displays a list of meals that match the user's search term or a random meal if the user requested a surprise. Each meal is accompanied by an image and a like button. Clicking the like button adds the meal to the user's list of favorites. Clicking the image opens up a modal with more information about the meal.</li>
+                                <li><strong>Favorites Component:</strong> This feature displays a list of meals the user has liked. Each favorite meal is accompanied by an image and a remove button. Clicking the remove button removes the meal from the favorites list. Clicking the image opens up a modal with more details about the meal.</li>
+                                <li><strong>Modal Component:</strong> This feature displays detailed information about a selected meal. The details include the meal's image, name, and cooking instructions. A close button allows the user to close the modal.</li>
+                                <li><strong>App Context:</strong> The application leverages React's context API to manage state across components. This includes the current loading status, list of meals fetched from the API, search term, favorite meals, and selected meal for the modal.</li>
+                            </ul>
+                            
+                            <p class="mb-4 text-start"><strong>Key Technologies:</strong></p>
+                            <ul class="text-start">
+                                <li><strong>React.js:</strong> A JavaScript library for building user interfaces, used for creating the various components in this application.</li>
+                                <li><strong>Context API:</strong> This feature of React.js is used to manage global state across multiple components without having to pass props down manually at every level.</li>
+                                <li><strong>Local Storage:</strong> This web storage object is used to store user data (favorite meals) across browser sessions.</li>
+                                <li><strong>Axios:</strong> A promise-based HTTP client for the browser and node.js, used to make API calls to TheMealDB.</li>
+                            </ul>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close Window
